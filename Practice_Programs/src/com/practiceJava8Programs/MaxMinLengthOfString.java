@@ -1,4 +1,4 @@
-package com.practice;
+package com.practiceJava8Programs;
 
 import java.util.Arrays;
 import java.util.Comparator;

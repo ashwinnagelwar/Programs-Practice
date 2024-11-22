@@ -134,8 +134,12 @@ public class EmployeeMain {
 		System.out.println("Salary sorted in ascending order: "+emp13);
 				
 		//26. finding the highest salary from each department
-		Map<String,Optional<Employee>> collect = list.stream().collect(Collectors.groupingBy(Employee::getDeptName,Collectors.maxBy(Comparator.comparing(Employee::getSalary))));
-		System.out.println("Department wise highest salary "+collect);
+		Map<String,Optional<Employee>> emp14 = list.stream().collect(Collectors.groupingBy(Employee::getDeptName,Collectors.maxBy(Comparator.comparing(Employee::getSalary))));
+		System.out.println("Department wise highest salary "+emp14);
+		
+		//27. find list of employee name from each city
+		Map<String, List<String>> emp15 = list.stream().collect(Collectors.groupingBy(Employee::getCity,Collectors.mapping(Employee::getName, Collectors.toList())));
+		System.out.println("Employee name from each city "+emp15);
 				
 	}
 }

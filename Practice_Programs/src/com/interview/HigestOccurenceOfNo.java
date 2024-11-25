@@ -17,5 +17,9 @@ public class HigestOccurenceOfNo {
 		 Optional<Entry<Integer,Long>> max = Arrays.stream(array).boxed().collect(Collectors.groupingBy(Function.identity(),Collectors.counting()))
 		 .entrySet().stream().max(Map.Entry.comparingByValue());
 		 System.out.println(max);
+		 
+		 String[] str= {"Ashwin","Ramesh","Nagelwar","Ashwin","Nagelwar"};
+		 Map<String,Long> collect = Arrays.stream(str).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+		 System.out.println(collect);
 	}
 }

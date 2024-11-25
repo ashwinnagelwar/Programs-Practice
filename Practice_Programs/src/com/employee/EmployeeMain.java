@@ -140,6 +140,10 @@ public class EmployeeMain {
 		//27. find list of employee name from each city
 		Map<String, List<String>> emp15 = list.stream().collect(Collectors.groupingBy(Employee::getCity,Collectors.mapping(Employee::getName, Collectors.toList())));
 		System.out.println("Employee name from each city "+emp15);
+		
+		//28. find youngest employee
+		Employee employee6 = list.stream().min(Comparator.comparing(Employee::getAge)).get();
+		System.out.println("Youngest Employee :"+employee6);
 				
 	}
 }

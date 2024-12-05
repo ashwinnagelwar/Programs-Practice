@@ -1,6 +1,7 @@
 package com.interview;
 
 import java.util.Arrays;
+
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Map;
@@ -38,7 +39,6 @@ public class HigestOccurenceOfNo {
 		 
 		 //find the longest substring in given string and longest string should contain all unique character
 		 String s2="I am Ashwin Nagelwar";
-		 HashSet<Character> set=new HashSet<>();
 		 String string = Arrays.stream(s2.split(" ")).filter(
 				 											 word->word.chars()
 				 											 .mapToObj(ch->Character.toLowerCase((char)ch))

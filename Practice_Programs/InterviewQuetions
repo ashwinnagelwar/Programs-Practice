@@ -1,0 +1,163 @@
+Java
+1. What happens if I pass multiple null value to Set.
+2. What Hashset internally used and how it works
+3. What LinkedHashMap internally used and how it works
+4. What is Singletone design Pattern? explain implementation? What id Double check in SingleTone and how it works
+5. What is immutable class and how to implement it?
+5. difference between final and immutable
+6. difference between volatile and transient
+7. What is class loader in java and types of it
+8. Explain SOLID Principle with example in detailed
+9. What is Reflection API
+10. What is Copy Constructor
+11. Explain Different Cloning(Shallow and Deep)
+12. Explain about Executers Frameworks?List number of thred pool available in Executers
+13. What is Composit Key?How to create Composite Key
+14. Difference Between Future and Completable Future
+15. How to achieved Concurrent Execution wrt to Fork and Join/ Explain Concurrent package in java
+16. What are the predfined Functional Interface in Java
+17. Difference between Runnable and Callable Interface
+18. What are java 8 features
+19. What are java 11 features
+20. Stream vs Parallel Stream
+21. What are types of Stream method(Intermediate,Terminal and Short Circuit)
+22. Explain Functional Interface and Lambda Expression with implementation
+21. Can One functional interface implements another Functional Interface/Normal Interface
+22. Difference between marker and Functional Interface with ex.
+23. Difference between Abstract Class and Functional Interface wrt JAVA8
+24. Explain all memory in java, also in which memory static block/method implementation stored
+25. Explain Garbage Collection wrt PermGen
+26. Explain Serialization in detail
+27. Why String is immutable and explain wrt to Heap and SCP memory
+28. expalin join(), wait(),yield() method in multithreading
+29. Explain Java OOP concepts
+30. Can I implements Two Functional interface with same abstract method and what will happen if so
+31. HashMap vs HashSet vs ConcurrentHashmap vs HashTable
+32. TreeMap vs TreeSet
+33. How to call default method from two interface which has same default method name
+34. Changes wrt Garbage Collector wrt Java 8
+35. changes in HashMap wrt Java 8
+36. Why default and static method in Functional interface intoduced
+37. Difference between Default and Abstract method
+38. Map vs FlatMap
+39. Primitive vs Non-primitive Data types
+40. Comparable vs Comparator
+41. Can we pass Employee Object as key to HashMap and if so What changes we need to do wrt Employee class
+42. can we create our own Marker Interface
+43. Difference between JDK,JVM and JRE
+44. Design pattern based on Open Closed principle(Adapter Design Pattern)
+45. Difference between map() and reduce() in stream api
+
+
+SpringBoot
+1. Difference between @Controller and @ResrController
+2. What is IOC container
+3. Which Design Pattern used in SpringBoot by IOC container/Application Context
+4. What is Dependency Injection and type of it
+5. What are the scopes of Bean in SprongBoot
+6. Difference between Constructor,Setter and Field Injection, How dependency injected and which is prefered one?
+7. Explain Spring bean life cycle
+8. Difference between SOAP and REST
+9. Which build tool you have used in your project
+10.Different annotations used in Spring boot, can we use @service for all the classes, will it affect anything
+11. how to monitor application performanc in production(Actuator)
+12. Difference between POST and PUT mapping
+13. Difference between PUT and PATCH
+14. Difference Between @RequestParam and @PathVariable
+15. Difference between @RequestBody and @ResponseBody
+16. What is the use of @RequestMapping
+17. What is @PostConstruct and @PreDestroy/ Can we have define any implementation in springboot which can be executed after bean creation and before bean deletion
+18. How to use multiple database in spring boot application
+19. Difference between Spring and Spring Boot
+20. What is @SpringBootApplication annotation
+21. WHat is mean by Auto Configuration wrt Spring Boot feature
+22. What is Cyclic Dependency and how to handle it
+23. Expalin @Transactional annotation and also their Propagation Type
+24. How to implement different Mapping and What is the use of CascadeTpe in it?
+25. What is mean by StateLess wrt REST API and how it works
+26. Explain Different HTTP Status code
+27. Explain Spring Profile/Profiling/@Profile wrt to spring boot
+28. What is @NamedQuery
+29. How to write Query in Spring boot at Repository
+30. What is mean by Config Server and how it used and works
+31. Difference between Singletone wrt Core Java and Spring
+32. What are the best practices while creating REST api
+33. Difference between Entity type and Value Type
+34. Different annotations used in spring security
+35. Can we remove bean creation and dependency injection of any classes, How to achieve it if so(Exclude from @ComponentScan)
+36. What is Spring AOP
+37. Explain Spring security JWT token Based
+38. Explain Spring MVC architecture flow
+39. What are the Spring Data JPA features
+40. Difference between @Qualifier and @Primary annotations
+41. What is IOC container in Spring boot
+42. Explain types of dependency Injection and Autowiring and What is defference between Dependency Injection and Autowiring
+43. How to handle OotOfMemory Exception
+44. Explain Creational Design patterns
+45. Explain Authentication and Authorization wrt to Security
+46. What is the use of @CrossOrigin annotation
+47. What JWT token consist of?
+48. How to use Web Security Adapter for role based autherization
+49. How to Handle Global Exception in Spring Boot
+50. Can we Accept request in xml and convert it into json and vice versa(Jackson Dependency)
+51. Difference between @Component, @Bean
+52. Do we need @Repository annotation over JPA repository
+53. Client Side vs Server Side Load Balancing
+54. Explain Circuit Breaker, Retry, Rate Limiter Design Pattern and where to use
+
+Microservice
+1. How to handle multiple request/How to protect application from DDOS attack(Rate Limiter)
+2. How to achieve load Balancing in Microservice
+3. How to optimize your sringboot application performance
+4. Explain Microservice architecture(gateway,Service Regisrty,Load Balancing,..)
+5. Explain Microservice SAGA Design Pattern
+6. How to handle Transaction failure and Distributed transaction in microservice(Zipkins)
+7. How microservice communicate with each other
+
+Programs
+1. how to remove duplicates from list.
+2. Find Missing NUmber in Array
+3. Sort Given Array
+4. Find duplicate in Array
+5. Remove Duplicate From Array/List
+6. Count words in array
+7. arrange -ve number on left and +ve number on right in array
+8. Find Second max salary of employee using stream api
+9. find Employee count by each Department
+10. find first unique number from array/list
+11. Convert List of String object into Single String object seperated with space or coma
+12. Find Two numbers whose sum is 19 in array
+13. merg two array and then sort resulting array
+14. Find contineuos string in given list of String
+15. Reverse the given String
+16. count each character in given String
+17. Sort employee based on their salary using stream api
+
+
+
+Database:
+1. Find Second highest Salary of employee in MySQL.
+2. Explain hibernate Architecture/life Cycle
+3. Difference between first level cache and second level cache, which is default?
+4. Annotations used in hibernate
+5. difference between HAVING and WHERE, with example
+6. Explain ACIDE property
+7. What is Function and Procedure and What is the difference between them
+8. How to create Composite Key in SQL
+9. What is index in DB
+10. What is Curser
+11. Difference between OpenSession and CurrentSession
+12. Explain View,Trigger
+13. Explain Different JOINS in SQL with example
+14. What is Normalization, explain its types and why to use
+15. Explain Partitioning and Sharding
+16. Difference between get() vs load()
+17. Difference between save() vs persist()
+18. Difference between Session and Session Factory
+19. Create one to one/one to many mapping using Employee and department table in sql
+20. find third highest salary from each department using sql
+21. How to define Foreign key wrt Employee and Department table
+22. Count number of employee from each department using sql
+
+
+

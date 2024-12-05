@@ -27,11 +27,8 @@ public class CustomizedSort {
 		
 		//We have stored position as value for each number in hashmap
 		
-		Integer[] array = Arrays.stream(arr).boxed().toArray(Integer[]::new);//we converted int array into Integer Array
-		Arrays.sort(array,(a,b)->map.get(a).compareTo(map.get(b)));//we have sorted array element as per their values using compareTo() method of comparable
-		
-		int[] array2 = Arrays.stream(array).mapToInt(Integer::intValue).toArray();
-		System.out.println(Arrays.toString(array2));
+		int[] array = Arrays.stream(arr).boxed().sorted((a,b)->map.get(a).compareTo(map.get(b))).mapToInt(Integer::intValue).toArray();
+		System.out.println(Arrays.toString(array));
 		
 	}
 }

@@ -2,7 +2,7 @@ Java
 1. What happens if I pass multiple null value to Set.
 2. What Hashset internally used and how it works
 3. What LinkedHashMap internally used and how it works
-4. What is Singletone design Pattern? explain implementation? What id Double check in SingleTone and how it works
+4. What is Singletone design Pattern? explain implementation? What is Double check in SingleTone and how it works
 5. What is immutable class and how to implement it?
 5. difference between final and immutable
 6. difference between volatile and transient
@@ -26,7 +26,7 @@ Java
 22. Difference between marker and Functional Interface with ex.
 23. Difference between Abstract Class and Functional Interface wrt JAVA8
 24. Explain all memory in java, also in which memory static block/method implementation stored
-25. Explain Garbage Collection wrt PermGen
+25. Explain Garbage Collection wrt PermGen vs MetaSpace
 26. Explain Serialization in detail
 27. Why String is immutable and explain wrt to Heap and SCP memory
 28. expalin join(), wait(),yield() method in multithreading
@@ -35,7 +35,7 @@ Java
 31. HashMap vs HashSet vs ConcurrentHashmap vs HashTable
 32. TreeMap vs TreeSet
 33. How to call default method from two interface which has same default method name
-34. Changes wrt Garbage Collector wrt Java 8
+34. Changes wrt Garbage Collector wrt Java 8(MetaSpace replace PermGen)
 35. changes in HashMap wrt Java 8
 36. Why default and static method in Functional interface intoduced
 37. Difference between Default and Abstract method
@@ -47,6 +47,9 @@ Java
 43. Difference between JDK,JVM and JRE
 44. Design pattern based on Open Closed principle(Adapter Design Pattern)
 45. Difference between map() and reduce() in stream api
+46. Difference between StringBuffer and StringBuilder, what Data Structure used by them internally?
+47. Difference between Concurrent HashMap and Synchronized HashMap.
+
 
 
 SpringBoot
@@ -90,20 +93,21 @@ SpringBoot
 38. Explain Spring MVC architecture flow
 39. What are the Spring Data JPA features
 40. Difference between @Qualifier and @Primary annotations
-41. What is IOC container in Spring boot
-42. Explain types of dependency Injection and Autowiring and What is defference between Dependency Injection and Autowiring
-43. How to handle OotOfMemory Exception
-44. Explain Creational Design patterns
-45. Explain Authentication and Authorization wrt to Security
-46. What is the use of @CrossOrigin annotation
-47. What JWT token consist of?
-48. How to use Web Security Adapter for role based autherization
-49. How to Handle Global Exception in Spring Boot
-50. Can we Accept request in xml and convert it into json and vice versa(Jackson Dependency)
-51. Difference between @Component, @Bean
-52. Do we need @Repository annotation over JPA repository
-53. Client Side vs Server Side Load Balancing
-54. Explain Circuit Breaker, Retry, Rate Limiter Design Pattern and where to use
+41. Explain types of dependency Injection and Autowiring and What is defference between Dependency Injection and Autowiring
+42. How to handle OotOfMemory Exception
+43. Explain Creational Design patterns
+44. Explain Authentication and Authorization wrt to Security
+45. What is the use of @CrossOrigin annotation
+46. What JWT token consist of?
+47. How to use Web Security Adapter for role based autherization
+48. How to Handle Global Exception in Spring Boot
+49. Can we Accept request in xml and convert it into json and vice versa(Jackson Dependency)
+50. Difference between @Component, @Bean
+51. Do we need @Repository annotation over JPA repository
+52. Client Side vs Server Side Load Balancing
+53. Explain Circuit Breaker, Retry, Rate Limiter Design Pattern and where to use
+54. What is the use of @data annotation
+55. What is Criteria Query, Query by Example?
 
 Microservice
 1. How to handle multiple request/How to protect application from DDOS attack(Rate Limiter)
@@ -141,7 +145,7 @@ Database:
 3. Difference between first level cache and second level cache, which is default?
 4. Annotations used in hibernate
 5. difference between HAVING and WHERE, with example
-6. Explain ACIDE property
+6. Explain ACID property
 7. What is Function and Procedure and What is the difference between them
 8. How to create Composite Key in SQL
 9. What is index in DB
@@ -159,5 +163,6 @@ Database:
 21. How to define Foreign key wrt Employee and Department table
 22. Count number of employee from each department using sql
 
-
+Other:
+1. How to pull only specific person Changes from branch/ What is the use of Cherry-pick command in git?
 

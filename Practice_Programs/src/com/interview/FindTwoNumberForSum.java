@@ -16,7 +16,7 @@ public class FindTwoNumberForSum {
 	    	int number=targetSum-num;
 	    	if(set.contains(number))
 	    	{
-	    		System.out.println("The two number whose sum "+targetSum+ " is "+number +"and "+num);
+	    		System.out.println("The two number whose sum "+targetSum+ " bis "+number +"and "+num);
 	    		break;
 	    	}else
 	    	{

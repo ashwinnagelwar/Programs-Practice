@@ -33,7 +33,7 @@ public class CountStringCharacter {
 		
 		//Using Java 8 stream api
 		
-		String string = Arrays.stream(s.split("")).collect(Collectors.groupingBy(Function.identity(),LinkedHashMap::new,Collectors.counting())).entrySet()
+		String string = Arrays.stream(s.split("")).collect(Collectors.groupingBy(Function.identity(),Collectors.counting())).entrySet()
 						.stream().map(x->new StringBuffer().append(x.getKey()+x.getValue())).collect(Collectors.joining());
 		System.out.println(string);
 	}

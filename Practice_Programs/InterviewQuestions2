@@ -1,0 +1,99 @@
+1. What is the difference between ClassNotFoundException and NoClassDefFoundError?
+2. What is BigInteger and how to define it?
+3. List<String> list=new ArrayList<>();
+	list.add("A");
+	list.add("B");
+	list.add("A");
+	Find out list of duplicate elements
+	
+	list.add("A");
+	list.add("a");
+	list.add("b");
+	make separate list for capital and small letters
+4. Which one is better in java, extending thread class or implementing Runnable interface?
+5. Suppose you have thread t1,t2,t3. How will you ensure that thread t2 will run after t1 and thread t3 after t2?
+6. Why do we call the start() method first, which calls the run() method, why not directly call run() method?
+7. How will you awake a block blocked thread in java?
+8. Difference between class Lock and Object Lock?
+9. What happen if we are not overriding run() method?
+10. Which method will release lock?
+11. What are some common problem you have faced in multi-threading env? how you resolved it?
+12. WHat is the difference between User-Level and Kernel_Level thread?
+13. Difference between Runnable and Callable Interface and when to call each explain?
+14. What is deadLock and how to handle it?
+15. What are checked and un-checked exception?
+16. What happen When we are throwing checked exception in super class method and same method throwing run time exception in sub class?
+17. Difference between throw and throws
+18. What happen when main method throws exception?
+19. What changes happens related to Garbage collectors wrt java 1.8?
+20. How to create immutable class in java?
+21. When to use ArrayList and LinkedList?
+22. Difference between HashMap and TreeMap
+23. What is time complexity of HashMap/TreeMap/LinkedHashMap?O(1)/O(log n)/O(1)
+24. Can we use class object and key in hashMap?
+25. Write a code for iterating Map using lambda expression.
+26. What is stream and parallel stream?
+27. Class Animal
+	{
+	 public void eat(){
+	  syso("Eat all eatables");
+	  }
+	  }
+	  
+	  Class Dog extends Animal{
+	  protected void eat(){
+	  syso("Dog like to eat meat");
+	  }
+	  main(){
+	  Dog d=new Dog();
+	  d.eat();
+	  }
+	  Which method will be called, method visibility issue?
+	  
+28. Class User{
+	String name;
+	int age;
+	List<Address> addresList;
+	}
+	 Class Address{
+	 String cityName;
+	 int pincode;
+	 }
+	 
+	 List<User> users=new ArrayList<>();
+	 assume 1000 user are there in list
+	 28.1 Get list of distinct user name as list--> Userlist.stream().map(User::getName).collect(Collectors.toSet());
+	 28.2 get list of distinct city name--> UserList.stream().flatMap(u->u.getAddressList().stream()).map(Address::getCityName).collect(Collectors.toSet());
+	 
+29. How factory design patterns works? How singletone design pattern works? How double check done in singletone?
+30. What are the important annotation in spring?
+31. How spring secuirty works?
+32. How to keep track of request in microservice?
+33. How different services communicate with each other in microservice? And how to handle eaxception in between this?
+34. Design patterns used for microservice?
+35. Difference between default and protected accesss modifier?
+36. What is meta space?
+37. how we implements encapsulation in java program?
+38. give example of is-a and has-a relationship
+39. What is LocalThread class?
+40. Why we can not override static method?
+41. what is contract between lambda expression and functional interface?
+42. What is load factor for HashMap?
+43. what are the ways to create bean in spring application?
+44. How SpringApplication.run() method works internally?
+45. What is spring-started dependencies?
+46. How to read properties in spring application?
+47. what is the use of @Required annotation?
+48. What are object states in hibernate?
+49. difference between update and merg wrt hibernate?
+50. difference betwenn composit key and foreign key
+51. how to write native query in JPA?
+52. what is the meaning of 201 / 404 status code, what status code will return for exception/update operation?
+53. explain microservice architecture
+54. how to create custome API gateway?
+55. which data structure will use while implementing stack?
+
+	 
+
+ 
+30. 

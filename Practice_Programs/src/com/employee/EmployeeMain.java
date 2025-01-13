@@ -148,6 +148,10 @@ public class EmployeeMain {
 		//29. Increase employee salary by 500 whose salary is less than 8000 and prevent original list
 		List<Long> emp16 = list.stream().map(emp->emp.getSalary()<=8000?emp.getSalary()+500:emp.getSalary()).collect(Collectors.toList());
 		System.out.println("Increase salary of employee: "+emp16);
+		
+		//30. finding maximum age of employee from each department
+		Map<String, Optional<Employee>> emp17 = list.stream().collect(Collectors.groupingBy(Employee::getDeptName, Collectors.maxBy(Comparator.comparingInt(Employee::getAge))));
+		System.out.println(emp17);
 				
 	}
 }

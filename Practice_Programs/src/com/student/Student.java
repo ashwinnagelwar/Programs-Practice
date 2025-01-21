@@ -11,8 +11,13 @@ public class Student {
 	private String name;
 	private int age;
 	private List<Address> addressList;
-	public Student(int i, String string, int j, List<Address> asList) {
-		// TODO Auto-generated constructor stub
+	
+	public Student(int id, String name, int age, List<Address> addressList) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.addressList = addressList;
 	}
 	public int getId() {
 		return id;
@@ -40,19 +45,12 @@ public class Student {
 	}
 	
 	
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", age=" + age + ", addressList=" + addressList + "]";
+	}
 	public static void main(String[] args) {
-//		ArrayList<Student> list=new ArrayList<>();
-//		list.add(new Student(1,"Ashwin",33,Arrays.asList(new Address(10,"Chandrapur","MH",442907),new Address(11,"Wardha","MH",442100))));
-//		list.add(new Student(2,"Rahul",35,Arrays.asList(new Address(10,"Nagpur","MH",440007),new Address(11,"Pune","MH",411057))));
-//		list.add(new Student(3,"Gaurav",30,Arrays.asList(new Address(10,"Chandrapur","MH",442907),new Address(11,"Pune","MH",411057))));
-//		list.add(new Student(4,"Rakesh",22,Arrays.asList(new Address(10,"Nagpur","MH",440007),new Address(11,"Wardha","MH",442100))));
-//		list.add(new Student(5,"Ram",25,Arrays.asList(new Address(10,"Chandrapur","MH",442907),new Address(11,"Nagpur","MH",440007))));
-//		
-//		//find the list of student whose age>=30 and address is Nagpur
-//		
-//		List<Address> studentList1 = list.stream().filter(student->student.age>=30).flatMap(stu->stu.addressList.stream())
-//										.filter(add->add.getCity().equalsIgnoreCase("Nagpur")).collect(Collectors.toList());
-//		System.out.println();
+
 		
 		ArrayList<Student> list = new ArrayList<>();
         list.add(new Student(1, "Ashwin", 33, Arrays.asList(new Address(10, "Nagpur", "MH", 442907), new Address(11, "Wardha", "MH", 442100))));
@@ -61,10 +59,11 @@ public class Student {
         list.add(new Student(4, "Rakesh", 22, Arrays.asList(new Address(10, "Nagpur", "MH", 440007), new Address(11, "Wardha", "MH", 442100))));
         list.add(new Student(5, "Ram", 25, Arrays.asList(new Address(10, "Chandrapur", "MH", 442907), new Address(11, "Nagpur", "MH", 440007))));
 
+       
         // Find the list of students whose age >= 30 and address is Nagpur
         List<Student> filteredStudents = list.stream()
-            .filter(student -> student.age >= 30 &&
-                    student.addressList.stream().anyMatch(address -> address.getCity().equalsIgnoreCase("Nagpur")))
+            .filter(student -> student.getAge() >= 30 &&
+                    student.getAddressList().stream().anyMatch(address -> address.getCity().equalsIgnoreCase("Nagpur")))
             .collect(Collectors.toList());
 
         // Print the filtered students

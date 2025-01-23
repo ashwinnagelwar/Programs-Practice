@@ -92,8 +92,12 @@
 53. explain microservice architecture
 54. how to create custome API gateway?
 55. which data structure will use while implementing stack?
-
-	 
-
- 
-30. 
+56. Difference between abstraction and encapsulation.
+57. difference between default and protected modifier.
+58. how to implement encapsulation in code?
+59. which one is fast ArrayList or HashMap?
+60. how we can stop overriding?
+61. difference between final, finally and finalize?
+62. contract between functional interface and lambda expression?
+63. different ways to create bean in spring.
+64.  
